@@ -1,8 +1,8 @@
 Add-Type -AssemblyName System.Web
 $listener = New-Object System.Net.HttpListener
-$listener.Prefixes.Add('http://localhost:8890/')
+$listener.Prefixes.Add('http://localhost:9000/')
 $listener.Start()
-Write-Host 'Server running on http://localhost:8890'
+Write-Host 'Server running on http://localhost:9000'
 
 while ($listener.IsListening) {
     $context = $listener.GetContext()
