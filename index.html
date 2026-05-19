@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles-container" id="particles"></div>
+    
+    <div class="header">
+        <div class="time-display" id="timeDisplay">--:--:--</div>
+        <button class="login-btn" id="loginBtn">🔑 Login</button>
+    </div>
+
+    <div class="container">
+        <div class="welcome-card">
+            <div class="avatar">
+                <span class="greeting-icon">👋</span>
+            </div>
+            <h1 class="title">Welcome to AI Assistant</h1>
+            <p class="subtitle" id="greetingText">Nice to meet you</p>
+            <p class="typewriter" id="typewriterText"></p>
+            <span class="cursor" id="cursor"></span>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Enter your question...">
+                <button class="search-btn" id="searchBtn">🔍</button>
+            </div>
+            
+            <div class="features">
+                <div class="feature-item">
+                    <span class="icon">🤖</span>
+                    <span class="text">Smart Q&A</span>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">⚡</span>
+                    <span class="text">Fast Response</span>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">🔒</span>
+                    <span class="text">Secure</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-primary" id="getStarted">Get Started</button>
+                <button class="btn btn-secondary" id="learnMore">Learn More</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="serviceCount">0</span>
+                    <span class="stat-label">Today Services</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="userCount">0</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="accuracy">0</span>
+                    <span class="stat-label">Accuracy%</span>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h3 class="faq-title">FAQ</h3>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq1">What is AI Assistant?</button>
+                    <div class="faq-answer" id="answer1">AI Assistant is an AI-powered dialogue system that provides Q&A services, information queries, and daily assistance.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq2">How to use AI Assistant?</button>
+                    <div class="faq-answer" id="answer2">You can enter your questions in the search box, and the AI Assistant will answer immediately. Or click the "Get Started" button.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq3">How to protect data security?</button>
+                    <div class="faq-answer" id="answer3">We use end-to-end encryption technology. Your conversation content will not be stored or leaked.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2>User Login</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Username" id="username" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="register-link">Don't have an account? <a href="#">Register now</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
